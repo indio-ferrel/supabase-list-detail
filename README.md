@@ -1,6 +1,6 @@
 ## To Do  
 ✓ Copy over render function, data (the data that will be in Supabase instead of .js files?), app.js, CSS.  
-1. Add table in Supabase  
+✓ Add table in Supabase  
   - keys in data correspond to columns  
   - strings become varchars, nums either ints or floats  
   - create row for each item in array using the values  

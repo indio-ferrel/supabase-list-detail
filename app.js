@@ -1,16 +1,25 @@
 // We always just
 // import
 import { cereals } from './cereals-data.js';
-import { renderCereal } from './utils.js';
+import { renderCereal } from './render-utils.js';
 
 // grab DOM elements with getElementById()
-const cerealListEl = document.getElementById('cereals');
+async function loadData() {
+    const cereals = getCereals();
+    console.log(cereals);
+    const main = document.querySelector('main');
+
+    for (let cereal of cereals) {
+        const cerealDiv = renderCereal(cereal);
+        cerealListEl.append(cerealDiv);
+    }
+}
+
+loadData();
+
 
 // let state
-for (let cereal of cereals) {
-    const cerealDiv = renderCereal(cereal);
-    cerealListEl.append(cerealDiv);
-}
+
 
 
 // and describe our events
