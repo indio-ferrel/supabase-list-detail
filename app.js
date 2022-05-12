@@ -18,9 +18,7 @@ async function loadData() {
 
 loadData();
 
-
 // let state
-
 
 
 // and describe our events

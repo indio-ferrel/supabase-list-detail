@@ -2,6 +2,12 @@ body {
     font-family: 'Courier Prime', monospace;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .cereals {
     display: flex;
     flex-direction: row;
@@ -17,8 +23,10 @@ body {
     width: 25%;
 }
 
-.cereal img {
+img {
     border: 5px solid black;
     border-radius: 5%;
-    width: 95%;
+    max-height: 300px;
+    /* max-width: 300px; */
+    /* width: 95%; */
 }
