@@ -4,9 +4,8 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getCereals() {
-    const resp = await client.from('cereals').select('*');
-    console.log(cereals);
-    return resp.data;
+    const response = await client.from('cereals').select('*');
+    return response.data;
 }
 
 getCereals();
