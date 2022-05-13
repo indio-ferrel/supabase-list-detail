@@ -1,1 +1,36 @@
-/* add home page styles here */
+body {
+    font-family: 'Courier Prime', monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img {
+    border: 5px solid black;
+    border-radius: 5%;
+    max-height: 300px;
+    /* max-width: 300px; */
+    /* width: 95%; */
+}
+
+p {
+    max-width: 300px;
+}
+
+.cereals {
+    display: flex;
+    flex-direction: row;
+}
+
+.cereal {
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 25%;
+}
