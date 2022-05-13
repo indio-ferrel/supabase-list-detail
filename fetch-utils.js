@@ -8,4 +8,8 @@ export async function getCereals() {
     return response.data;
 }
 
-getCereals();
+export async function getCereal(id) {
+    const resp = await client.from('cereals').select('*').match({ id }).single();
+    // console.log(resp);
+    return resp.data;
+}

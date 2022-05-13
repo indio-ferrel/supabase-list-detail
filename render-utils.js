@@ -4,7 +4,7 @@ export function renderCereal(cereal) {
     const a = document.createElement('a');
     
     cerealDiv.classList.add('stop');
-    img.src = cereal.image;
+    img.src = `../assets/${cereal.image}.jpg`;
 
     a.href = `./stop-detail/?id=${cereal.id}`;
 
@@ -21,11 +21,11 @@ export function renderCerealDetail(cereal) {
     h2.textContent = cereal.name;
 
     const img = document.createElement('img');
-    img.src = cereal.image;
+    img.src = `../assets/${cereal.image}.jpg`;
 
-    const p = docuemnt.createElement('p');
+    const p = document.createElement('p');
     p.textContent = `${cereal.name} has been assigned a health rating of ${cereal.health} and a deliciousness rating of ${cereal.deliciousness} by an independent ratings board.`;
 
-    div.append(h1, img, p);
+    div.append(h2, img, p);
     return div;
 }

@@ -2,13 +2,15 @@
 // import
 import { getCereals } from './fetch-utils.js';
 import { renderCereal } from './render-utils.js';
+// import { renderCerealDetail } from './render-utils.js';
+
 
 const main = document.querySelector('main');
 
 // grab DOM elements with getElementById()
 async function loadData() {
     const cereals = await getCereals();
-    console.log(cereals);
+    // console.log(cereals);
     
     for (let cereal of cereals) {
         const cerealDiv = renderCereal(cereal);
